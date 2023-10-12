@@ -63,6 +63,7 @@
     </div>
   </header>
   <main class="main">
+    <h1>.</h1>
     <section class="special">
       <div class="conteiner">
         <h2 class="section-title">
@@ -71,7 +72,7 @@
         <div class="special-content list-reset flex">
           <div class="special-block">
             <article class="special-item special-img1">
-              <h1 class="special-title">Мальдивские острова</h1>
+              <h3 class="special-title">Мальдивские острова</h3>
               <p class="special-text">от 55 000 ₽</p>
               <div class="flex link-arrow">
                 <a href="#" class="special-link">Подробнее
@@ -82,7 +83,7 @@
               </div>
             </article>
             <article class="special-item special-img2">
-              <h1 class="special-title">Горящий тур на остров Крит</h1>
+              <h3 class="special-title">Горящий тур на остров Крит</h3>
               <p class="special-text">от 30 000 ₽</p>
               <div class="flex link-arrow">
                 <a href="#" class="special-link">Подробнее
@@ -95,7 +96,7 @@
           </div>
           <div class="special-block">
             <article class="special-item special-img3 flex">
-              <h1 class="special-title special-title-last">Номера категории люкс</h1>
+              <h3 class="special-title special-title-last">Номера категории люкс</h3>
               <p class="special-text special-text-last">от 5 000 ₽</p>
               <div class="flex link-arrow">
                 <a href="#" class="special-link">Подробнее
@@ -255,7 +256,7 @@
                   <img src="img/star-grey.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona española
               </h3>
               <p class="country country-name">
@@ -282,7 +283,7 @@
                   <img src="img/star-grey.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona son típicas
               </h3>
               <p class="country country-name">
@@ -309,7 +310,7 @@
                   <img src="img/star.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona de la guerra
               </h3>
               <p class="country country-name">
@@ -336,7 +337,7 @@
                   <img src="img/star.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona mentira piadosa
               </h3>
               <p class="country country-name">
@@ -363,7 +364,7 @@
                   <img src="img/star-grey.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona empujar la creatividad
               </h3>
               <p class="country country-name">
@@ -390,7 +391,7 @@
                   <img src="img/star-grey.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona el retorno
               </h3>
               <p class="country country-name">
@@ -417,7 +418,7 @@
                   <img src="img/star.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona mentira piadosa
               </h3>
               <p class="country country-name">
@@ -444,7 +445,7 @@
                   <img src="img/star-grey.svg" alt="">
                 </span>
               </div>
-              <h3 class="descr-text">
+              <h3 class="descr-text hotel-name">
                 Lagoona suerte siguió siempre
               </h3>
               <p class="country country-name">
@@ -467,36 +468,46 @@
     </section>
 
     <section class="tour">
-      <div class="conteiner container-tour">
+      <div class="conteiner conteiner-tour">
         <h2 class="section-title tour-title">
           Хочу тур
         </h2>
-        <div>
           <form class="flex form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <label class="label label-city"><span class="span">Город вылета</span>
-              <select class="select-city" name="city" required>
-                <option value="Санкт-Петербург">Санкт-Петербург</option>
-              </select>
-            </label>
-            <label class="label label-country"><span class="span">Страна</span>
-              <select class="select-country" name="country" required>
-                <option value="Австралия">Австралия</option>
-              </select>
-            </label>
-            <label class="label label-date"><span class="span">Дата прибытия</span>
-              <input class="input-date" type="date" name="date" required>
-            </label>
-            <label class="label label-nights"><span class="span">Ночей</span>
-              <input class="input-nights" type="number" name="nights" min="1" placeholder="6" required>
-            </label>
-            <label class="label label-tourists"><span class="span">Туристы</span>
-              <input class="input-tourists" type="number" name="tourists" min="1" placeholder="2" required>
-            </label>
+           <ul class="list-reset list-tour flex">
+            <li class="item-tour">
+              <label class="label label-city"><span class="span">Город вылета</span>
+                <select class="select-city" name="city" required>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                </select>
+              </label>
+            </li>
+            <li class="item-tour">
+              <label class="label label-country"><span class="span">Страна</span>
+                <select class="select-country" name="country" required>
+                  <option value="Австралия">Австралия</option>
+                </select>
+              </label>
+            </li>
+            <li class="item-tour">
+              <label class="label label-date"><span class="span">Дата прибытия</span>
+                <input class="input-date" type="date" name="date" required>
+              </label>
+            </li>
+            <li class="item-tour">
+              <label class="label label-nights"><span class="span">Ночей</span>
+                <input class="input-nights" type="number" name="nights" min="1" placeholder="6" required>
+              </label>
+            </li>
+            <li class="item-tour">
+              <label class="label label-tourists"><span class="span">Туристы</span>
+                <input class="input-tourists" type="number" name="tourists" min="1" placeholder="2" required>
+              </label>
+            </li>
+           </ul>
             <button class="button tour-button btn-reset" type="submit">
               Найти
             </button>
           </form>
-        </div>
       </div>
     </section>
 
@@ -546,7 +557,7 @@
             </button>
           </div>
           <div class="contacts-right">
-            <img src="img\layer.jpg" alt="Hotel">
+            <img class="contacts-img" src="img\layer.jpg" alt="Hotel">
           </div>
         </div>
       </div>
